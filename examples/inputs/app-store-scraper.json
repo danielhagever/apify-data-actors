@@ -1,0 +1,11 @@
+{
+  "searchTerms": [
+    "meditation"
+  ],
+  "platform": "both",
+  "country": "us",
+  "maxAppsPerSearch": 20,
+  "includeReviews": false,
+  "maxReviewsPerApp": 50,
+  "language": "en"
+}

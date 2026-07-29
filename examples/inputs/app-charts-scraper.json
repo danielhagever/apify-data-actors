@@ -1,0 +1,12 @@
+{
+  "countries": [
+    "us"
+  ],
+  "charts": [
+    "top-free"
+  ],
+  "categories": [
+    "all"
+  ],
+  "limit": 50
+}

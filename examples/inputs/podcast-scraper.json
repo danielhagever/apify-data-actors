@@ -1,0 +1,10 @@
+{
+  "searchTerms": [
+    "true crime"
+  ],
+  "genre": "all",
+  "includeEpisodes": false,
+  "maxEpisodesPerShow": 25,
+  "maxResults": 25,
+  "country": "us"
+}

@@ -1,0 +1,12 @@
+{
+  "appIds": [
+    "com.spotify.music"
+  ],
+  "platform": "both",
+  "maxReviewsPerApp": 100,
+  "sortBy": "mostrecent",
+  "minRating": 1,
+  "maxRating": 5,
+  "country": "us",
+  "language": "en"
+}

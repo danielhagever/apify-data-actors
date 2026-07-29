@@ -1,0 +1,16 @@
+{
+  "domains": [
+    "github.com",
+    "stripe.com"
+  ],
+  "includeDns": true,
+  "recordTypes": [
+    "A",
+    "MX",
+    "NS",
+    "TXT"
+  ],
+  "includeEmailSecurity": true,
+  "onlyRegistered": false,
+  "expiringWithinDays": 0
+}

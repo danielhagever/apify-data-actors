@@ -1,0 +1,7 @@
+{
+  "topCoins": 100,
+  "vsCurrency": "usd",
+  "includeTrending": false,
+  "includeBinance": true,
+  "historyDays": 0
+}

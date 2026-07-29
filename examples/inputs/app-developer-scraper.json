@@ -1,0 +1,8 @@
+{
+  "developers": [
+    "Duolingo"
+  ],
+  "country": "us",
+  "maxAppsPerDeveloper": 200,
+  "includeSummary": true
+}

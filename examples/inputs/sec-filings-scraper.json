@@ -1,0 +1,10 @@
+{
+  "companies": [
+    "AAPL"
+  ],
+  "includeFilings": true,
+  "includeFinancials": false,
+  "financialYears": 5,
+  "maxFilingsPerCompany": 50,
+  "maxSearchResults": 100
+}

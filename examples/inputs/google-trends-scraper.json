@@ -1,0 +1,11 @@
+{
+  "compareKeywords": false,
+  "dataTypes": [
+    "interestOverTime",
+    "relatedQueries"
+  ],
+  "timeframe": "today 12-m",
+  "regionResolution": "COUNTRY",
+  "category": 0,
+  "trendingNowGeo": "US"
+}

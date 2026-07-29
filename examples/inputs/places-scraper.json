@@ -1,0 +1,13 @@
+{
+  "searchAreas": [
+    "Tel Aviv"
+  ],
+  "categories": [
+    "cafe"
+  ],
+  "radiusMeters": 0,
+  "maxResultsPerArea": 200,
+  "withoutWebsiteOnly": false,
+  "withPhoneOnly": false,
+  "namedOnly": true
+}

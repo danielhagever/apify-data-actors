@@ -1,0 +1,9 @@
+{
+  "companies": [
+    "stripe"
+  ],
+  "remoteOnly": false,
+  "includeDescription": true,
+  "ats": "auto",
+  "maxJobsPerCompany": 1000
+}
