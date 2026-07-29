@@ -1,8 +1,8 @@
-# Apify data Actors — runnable examples
+# Apify data Actors: runnable examples
 
 Working code for twelve data-extraction Actors on the [Apify](https://apify.com) platform, published under [**glitchbound**](https://apify.com/glitchbound). Every Actor is built on an official or public API rather than on rendered HTML, so the shape of the output does not change when someone redesigns a page.
 
-Each example in `examples/inputs/` is generated from the Actor's own input schema, so it is a valid input by construction — not a snippet that drifted out of date.
+Each example in `examples/inputs/` is generated from the Actor's own input schema, so it is a valid input by construction, not a snippet that drifted out of date.
 
 **Every Actor here is auto-tested daily** against the same check Apify runs on the Store: start with default input, require a non-empty dataset, five-minute limit. Results are per-row; a target that fails comes back as an `error` row and is not charged.
 
@@ -23,7 +23,7 @@ Each example in `examples/inputs/` is generated from the Actor's own input schem
 | [Domain Scraper](https://apify.com/glitchbound/domain-scraper) | one domain with WHOIS and DNS | 2.00 |
 | [App Reviews Scraper](https://apify.com/glitchbound/app-reviews-scraper) | one review | 0.20 |
 
-Prices are the Free-tier rate per 1,000 results. Bronze, Silver and Gold plans pay less — down to half the Free rate on Gold. There is also a $0.02 Actor-start event.
+Prices are the Free-tier rate per 1,000 results. Bronze, Silver and Gold plans pay less, down to half the Free rate on Gold. There is also a $0.02 Actor-start event.
 
 ## Quick start
 
@@ -38,7 +38,7 @@ curl -X POST \
 
 Get a token from [console.apify.com/settings/integrations](https://console.apify.com/settings/integrations). The response is a JSON array of result rows.
 
-For runs that take longer than the synchronous limit, start the run and poll instead — `examples/python/client.py` does both.
+For runs that take longer than the synchronous limit, start the run and poll instead. `examples/python/client.py` does both.
 
 ## Examples
 
@@ -78,7 +78,7 @@ Top coins by market cap with price, 24h and 7d change, and Binance bid/ask, writ
 
 Every Actor honours the run's **maximum charge**, set in the run options or via `maxTotalChargeUsd` on the API call. When the limit is reached the Actor stops cleanly rather than being killed mid-write, so you never pay for a partial row.
 
-Targets that cannot be resolved — a ticker that does not exist, a domain that does not resolve — come back as rows with an `error` field and are not charged.
+Targets that cannot be resolved, such as a ticker that does not exist or a domain that does not resolve, come back as rows with an `error` field and are not charged.
 
 ## License
 

@@ -107,7 +107,7 @@ def split_errors(rows: list[dict]) -> tuple[list[dict], list[dict]]:
 
     These Actors report a failed target as a row carrying an `error` field
     rather than aborting the whole run, and those rows are not charged. Any
-    code that counts results should split them out — otherwise a run that
+    code that counts results should split them out. Otherwise a run that
     failed on every target still looks like it returned data.
     """
     good = [r for r in rows if not r.get("error")]

@@ -2,7 +2,7 @@
 
 A Form D is what a US company files after selling securities in a private
 placement. Filing it is required, it is public, and it usually lands on EDGAR
-before the funding announcement does — which makes it the earliest reliable
+before the funding announcement does, which makes it the earliest reliable
 signal that a specific company just took money.
 
 The interesting query is not "list every Form D" (there are thousands a month)
@@ -43,7 +43,7 @@ def main() -> int:
               f"(not charged): {failed[0].get('error')}\n")
     if not good:
         print("No Form D filings matched. Try a broader phrase or a longer "
-              "window — full-text search covers filings since 2001.")
+              "window. Full-text search covers filings since 2001.")
         return 0
 
     good.sort(key=lambda r: r.get("filingDate") or "", reverse=True)

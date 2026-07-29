@@ -5,7 +5,7 @@
 // The synchronous endpoint used here returns the dataset directly, which is the
 // shortest path from "I have a token" to "I have rows". For runs that take
 // longer than Apify's synchronous limit, start the run at POST /acts/<id>/runs
-// and poll GET /actor-runs/<runId> instead — examples/python/client.py shows
+// and poll GET /actor-runs/<runId> instead. examples/python/client.py shows
 // both paths.
 
 const API = "https://api.apify.com/v2";

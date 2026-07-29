@@ -1,6 +1,6 @@
 """See what people are actually complaining about in an app's recent reviews.
 
-Both stores are queried in one run — the Actor normalises App Store and Google
+Both stores are queried in one run. The Actor normalises App Store and Google
 Play into the same row shape, which is the whole reason to use it rather than
 two separate scrapers whose fields disagree.
 
@@ -61,7 +61,7 @@ def main() -> int:
         print(f"could not resolve {f.get('target') or f.get('appId')}: "
               f"{f.get('error')}")
     if not good:
-        print("\nNo 1-2 star reviews came back — which is its own answer.")
+        print("\nNo 1-2 star reviews came back, which is its own answer.")
         return 0
 
     by_platform = collections.Counter(r.get("platform") or "?" for r in good)
@@ -80,7 +80,7 @@ def main() -> int:
 
     print("\nMost recent, verbatim:")
     # The timestamp field is `reviewedAt`, and `title` is always null on Google
-    # Play because Play reviews have no titles — so the text is the only line
+    # Play because Play reviews have no titles, so the text is the only line
     # guaranteed to carry content.
     good.sort(key=lambda r: r.get("reviewedAt") or "", reverse=True)
     for r in good[:5]:
