@@ -86,13 +86,14 @@ Targets that cannot be resolved, such as a ticker that does not exist or a domai
 
 ## Write-ups
 
-Two of these examples have a longer post behind them, each with the measurement
+Some of these examples have a longer post behind them, each with the measurement
 that made it worth writing:
 
 - [Find startups the day they raise, before the press release](https://dev.to/glitchbound/find-startups-the-day-they-raise-before-the-press-release-with-30-lines-of-python-46o6). Form D hits EDGAR before the funding announcement. Includes the half-open date range EDGAR ignores in silence, which returned eleven years of filings outside the window and looked normal doing it.
 - [The App Store top charts are a public API, and nobody archives them](https://dev.to/glitchbound/the-app-store-top-charts-are-a-public-api-and-nobody-archives-them-n7n). The feed shows today and nothing else, so the archive is worth more than the feed.
-
 - [WHOIS is gone, RDAP replaced it, and a 404 does not mean what you think](https://dev.to/glitchbound/whois-is-gone-rdap-replaced-it-and-a-404-does-not-mean-what-you-think-3alh). RDAP's 404 is ambiguous: for the TLDs missing from IANA's bootstrap, including .io and .co, it means "nowhere to ask" rather than "available". That had this Actor reporting registered domains as free to buy.
+- [Google's News API has been gone since 2016, and people still search for it](https://dev.to/glitchbound/googles-news-api-has-been-gone-since-2016-and-people-still-search-for-it-3544). The RSS endpoint that outlived it needs no key. Includes Bing's per-query XML namespace, which is the request URL itself, so no fixed namespace constant ever matches and the publisher field silently comes back null.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
