@@ -89,8 +89,8 @@ Targets that cannot be resolved, such as a ticker that does not exist or a domai
 Two of these examples have a longer post behind them, each with the measurement
 that made it worth writing:
 
-- [Find startups the day they raise, before the press release](https://dev.to/daniel_meshulam_980cb36cc/find-startups-the-day-they-raise-before-the-press-release-with-30-lines-of-python-46o6). Form D hits EDGAR before the funding announcement. Includes the half-open date range EDGAR ignores in silence, which returned eleven years of filings outside the window and looked normal doing it.
-- [The App Store top charts are a public API, and nobody archives them](https://dev.to/daniel_meshulam_980cb36cc/the-app-store-top-charts-are-a-public-api-and-nobody-archives-them-n7n). The feed shows today and nothing else, so the archive is worth more than the feed.
+- [Find startups the day they raise, before the press release](https://dev.to/glitchbound/find-startups-the-day-they-raise-before-the-press-release-with-30-lines-of-python-46o6). Form D hits EDGAR before the funding announcement. Includes the half-open date range EDGAR ignores in silence, which returned eleven years of filings outside the window and looked normal doing it.
+- [The App Store top charts are a public API, and nobody archives them](https://dev.to/glitchbound/the-app-store-top-charts-are-a-public-api-and-nobody-archives-them-n7n). The feed shows today and nothing else, so the archive is worth more than the feed.
 
 ## License
 
