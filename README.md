@@ -1,6 +1,6 @@
 # Apify data Actors: runnable examples
 
-Working code for twelve data-extraction Actors on the [Apify](https://apify.com) platform, published under [**glitchbound**](https://apify.com/glitchbound). Every Actor is built on an official or public API rather than on rendered HTML, so the shape of the output does not change when someone redesigns a page.
+Working code for sixteen data-extraction Actors on the [Apify](https://apify.com) platform, published under [**glitchbound**](https://apify.com/glitchbound). Every Actor is built on an official or public API rather than on rendered HTML, so the shape of the output does not change when someone redesigns a page.
 
 Each example in `examples/inputs/` is generated from the Actor's own input schema, so it is a valid input by construction, not a snippet that drifted out of date.
 
@@ -16,11 +16,15 @@ Each example in `examples/inputs/` is generated from the Actor's own input schem
 | [App Store & Google Play Scraper](https://apify.com/glitchbound/app-store-scraper) | one app listing | 3.00 |
 | [App Store Top Charts Scraper](https://apify.com/glitchbound/app-charts-scraper) | one ranked chart entry | 3.00 |
 | [App Developer Portfolio Scraper](https://apify.com/glitchbound/app-developer-scraper) | one app in a developer's portfolio | 3.00 |
+| [Website Tech Stack & Contact Scraper](https://apify.com/glitchbound/website-scraper) | one website profiled: stack, contacts, socials | 3.00 |
 | [Crypto Scraper](https://apify.com/glitchbound/crypto-scraper) | one coin, candle, or trending entry | 2.50 |
 | [Job Board Scraper](https://apify.com/glitchbound/job-board-scraper) | one job posting | 2.50 |
 | [Google Trends Scraper](https://apify.com/glitchbound/google-trends-scraper) | one trend series or trending query | 2.50 |
 | [Podcast Scraper](https://apify.com/glitchbound/podcast-scraper) | one show or episode | 2.00 |
 | [Domain Scraper](https://apify.com/glitchbound/domain-scraper) | one domain with WHOIS and DNS | 2.00 |
+| [Shopify Scraper](https://apify.com/glitchbound/shopify-scraper) | one product variant or collection | 2.00 |
+| [News Scraper](https://apify.com/glitchbound/news-scraper) | one article, after dedupe | 1.50 |
+| [Remote Jobs Scraper](https://apify.com/glitchbound/remote-jobs-scraper) | one remote job, after dedupe | 1.50 |
 | [App Reviews Scraper](https://apify.com/glitchbound/app-reviews-scraper) | one review | 0.20 |
 
 Prices are the Free-tier rate per 1,000 results. Bronze, Silver and Gold plans pay less, down to half the Free rate on Gold. There is also a $0.02 Actor-start event.
@@ -79,6 +83,14 @@ Top coins by market cap with price, 24h and 7d change, and Binance bid/ask, writ
 Every Actor honours the run's **maximum charge**, set in the run options or via `maxTotalChargeUsd` on the API call. When the limit is reached the Actor stops cleanly rather than being killed mid-write, so you never pay for a partial row.
 
 Targets that cannot be resolved, such as a ticker that does not exist or a domain that does not resolve, come back as rows with an `error` field and are not charged.
+
+## Write-ups
+
+Two of these examples have a longer post behind them, each with the measurement
+that made it worth writing:
+
+- [Find startups the day they raise, before the press release](https://dev.to/daniel_meshulam_980cb36cc/find-startups-the-day-they-raise-before-the-press-release-with-30-lines-of-python-46o6). Form D hits EDGAR before the funding announcement. Includes the half-open date range EDGAR ignores in silence, which returned eleven years of filings outside the window and looked normal doing it.
+- [The App Store top charts are a public API, and nobody archives them](https://dev.to/daniel_meshulam_980cb36cc/the-app-store-top-charts-are-a-public-api-and-nobody-archives-them-n7n). The feed shows today and nothing else, so the archive is worth more than the feed.
 
 ## License
 
