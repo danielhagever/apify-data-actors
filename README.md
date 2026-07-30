@@ -21,7 +21,7 @@ Each example in `examples/inputs/` is generated from the Actor's own input schem
 | [Job Board Scraper](https://apify.com/glitchbound/job-board-scraper) | one job posting | 2.50 |
 | [Google Trends Scraper](https://apify.com/glitchbound/google-trends-scraper) | one trend series or trending query | 2.50 |
 | [Podcast Scraper](https://apify.com/glitchbound/podcast-scraper) | one show or episode | 2.00 |
-| [Domain Scraper](https://apify.com/glitchbound/domain-scraper) | one domain with WHOIS and DNS | 2.00 |
+| [WHOIS Domain Lookup](https://apify.com/glitchbound/whois-domain-lookup) | one domain with WHOIS and DNS | 2.00 |
 | [Shopify Scraper](https://apify.com/glitchbound/shopify-scraper) | one product variant or collection | 2.00 |
 | [News Scraper](https://apify.com/glitchbound/news-scraper) | one article, after dedupe | 1.50 |
 | [Remote Jobs Scraper](https://apify.com/glitchbound/remote-jobs-scraper) | one remote job, after dedupe | 1.50 |
