@@ -8,26 +8,38 @@ Each example in `examples/inputs/` is generated from the Actor's own input schem
 
 ## The Actors
 
-| Actor | What one result is | $/1k (Free tier) |
-|---|---|---|
-| [SEC EDGAR Scraper](https://apify.com/glitchbound/sec-filings-scraper) | one filing, fiscal year of financials, or full-text hit | 3.00 |
-| [Local Business Scraper](https://apify.com/glitchbound/places-scraper) | one business with phone and website | 3.00 |
-| [Steam Scraper](https://apify.com/glitchbound/steam-scraper) | one game with price and metadata | 3.00 |
-| [App Store & Google Play Scraper](https://apify.com/glitchbound/app-store-scraper) | one app listing | 3.00 |
-| [App Store Top Charts Scraper](https://apify.com/glitchbound/app-charts-scraper) | one ranked chart entry | 3.00 |
-| [App Developer Portfolio Scraper](https://apify.com/glitchbound/app-developer-scraper) | one app in a developer's portfolio | 3.00 |
-| [Website Tech Stack & Contact Scraper](https://apify.com/glitchbound/website-scraper) | one website profiled: stack, contacts, socials | 3.00 |
-| [Crypto Scraper](https://apify.com/glitchbound/crypto-scraper) | one coin, candle, or trending entry | 2.50 |
-| [Job Board Scraper](https://apify.com/glitchbound/job-board-scraper) | one job posting | 2.50 |
-| [Google Trends Scraper](https://apify.com/glitchbound/google-trends-scraper) | one trend series or trending query | 2.50 |
-| [Podcast Scraper](https://apify.com/glitchbound/podcast-scraper) | one show or episode | 2.00 |
-| [WHOIS Domain Lookup](https://apify.com/glitchbound/whois-domain-lookup) | one domain with WHOIS and DNS | 2.00 |
-| [Shopify Scraper](https://apify.com/glitchbound/shopify-scraper) | one product variant or collection | 2.00 |
-| [News Scraper](https://apify.com/glitchbound/news-scraper) | one article, after dedupe | 1.50 |
-| [Remote Jobs Scraper](https://apify.com/glitchbound/remote-jobs-scraper) | one remote job, after dedupe | 1.50 |
-| [App Reviews Scraper](https://apify.com/glitchbound/app-reviews-scraper) | one review | 0.20 |
+| Actor | What one result is |
+|---|---|
+| [SEC EDGAR Scraper](https://apify.com/glitchbound/sec-filings-scraper) | one filing, fiscal year of financials, or full-text hit |
+| [Local Business Scraper](https://apify.com/glitchbound/places-scraper) | one business with phone and website |
+| [Steam Scraper](https://apify.com/glitchbound/steam-scraper) | one game with price and metadata |
+| [App Store & Google Play Scraper](https://apify.com/glitchbound/app-store-scraper) | one app listing |
+| [App Store Top Charts Scraper](https://apify.com/glitchbound/app-charts-scraper) | one ranked chart entry |
+| [App Developer Portfolio Scraper](https://apify.com/glitchbound/app-developer-scraper) | one app in a developer's portfolio |
+| [Website Tech Stack & Contact Scraper](https://apify.com/glitchbound/website-scraper) | one website profiled: stack, contacts, socials |
+| [Crypto Scraper](https://apify.com/glitchbound/crypto-scraper) | one coin, candle, or trending entry |
+| [Job Board Scraper](https://apify.com/glitchbound/job-board-scraper) | one job posting |
+| [Google Trends Scraper](https://apify.com/glitchbound/google-trends-scraper) | one trend series or trending query |
+| [Podcast Scraper](https://apify.com/glitchbound/podcast-scraper) | one show or episode |
+| [WHOIS Domain Lookup](https://apify.com/glitchbound/whois-domain-lookup) | one domain with WHOIS and DNS |
+| [Shopify Scraper](https://apify.com/glitchbound/shopify-scraper) | one product variant or collection |
+| [News Scraper](https://apify.com/glitchbound/news-scraper) | one article, after dedupe |
+| [Remote Jobs Scraper](https://apify.com/glitchbound/remote-jobs-scraper) | one remote job, after dedupe |
+| [App Reviews Scraper](https://apify.com/glitchbound/app-reviews-scraper) | one review |
 
-Prices are the Free-tier rate per 1,000 results. Bronze, Silver and Gold plans pay less, down to half the Free rate on Gold. There is also a $0.02 Actor-start event.
+Each Actor charges per result; the current rate for your plan is on its Store page.
+
+## Job data
+
+The job Actors have outgrown this list and live in their own repo:
+[**job-board-apis**](https://github.com/danielhagever/job-board-apis) documents the public
+job posting endpoint of 18 applicant tracking systems (Greenhouse, Lever, Ashby, Workday,
+Oracle, SmartRecruiters and more), each with a `curl` tested live. The hosted versions:
+
+- [Workday Jobs Scraper](https://apify.com/glitchbound/workday-jobs-scraper): any Workday careers site, by company name or URL.
+- [Company Career Page Jobs Scraper](https://apify.com/glitchbound/ats-jobs-scraper): a company name or domain in, its open jobs out, across 24 systems.
+- [Job Listings API](https://apify.com/glitchbound/ats-jobs-search): search one index of career-site jobs, refreshed daily.
+- [Google Play Top Charts Scraper](https://apify.com/glitchbound/google-play-charts-scraper): top free, top grossing and trending apps by country.
 
 ## Quick start
 
@@ -93,6 +105,9 @@ that made it worth writing:
 - [The App Store top charts are a public API, and nobody archives them](https://dev.to/glitchbound/the-app-store-top-charts-are-a-public-api-and-nobody-archives-them-n7n). The feed shows today and nothing else, so the archive is worth more than the feed.
 - [WHOIS is gone, RDAP replaced it, and a 404 does not mean what you think](https://dev.to/glitchbound/whois-is-gone-rdap-replaced-it-and-a-404-does-not-mean-what-you-think-3alh). RDAP's 404 is ambiguous: for the TLDs missing from IANA's bootstrap, including .io and .co, it means "nowhere to ask" rather than "available". That had this Actor reporting registered domains as free to buy.
 - [Google's News API has been gone since 2016, and people still search for it](https://dev.to/glitchbound/googles-news-api-has-been-gone-since-2016-and-people-still-search-for-it-3544). The RSS endpoint that outlived it needs no key. Includes Bing's per-query XML namespace, which is the request URL itself, so no fixed namespace constant ever matches and the publisher field silently comes back null.
+- [Workday Jobs Scraper: every posting from any Workday careers site, by company name](https://dev.to/glitchbound/workday-jobs-scraper-every-posting-from-any-workday-careers-site-by-company-name-8bd).
+- [Company Career Page Scraper: every open job from any company, by name or domain](https://dev.to/glitchbound/company-career-page-scraper-every-open-job-from-any-company-by-name-or-domain-ede).
+- [Google Play top charts API: top free, top grossing and trending apps in 130 countries](https://dev.to/glitchbound/google-play-top-charts-api-top-free-top-grossing-and-trending-apps-in-130-countries-31ac).
 
 ## License
 
