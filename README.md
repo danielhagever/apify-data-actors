@@ -41,7 +41,7 @@ quick start for the Workday Actor. The hosted versions:
 - [Workday Jobs Scraper](https://apify.com/glitchbound/workday-jobs-scraper): any Workday careers site, by company name or URL.
 - [Company Career Page Jobs Scraper](https://apify.com/glitchbound/ats-jobs-scraper): a company name or domain in, its open jobs out, across 24 systems.
 - [Job Listings API](https://apify.com/glitchbound/ats-jobs-search): search one index of career-site jobs, refreshed daily.
-- [Google Play Top Charts Scraper](https://apify.com/glitchbound/google-play-charts-scraper): top free, top grossing and trending apps by country.
+- [Google Play Top Charts Scraper](https://apify.com/glitchbound/google-play-charts-scraper): top free, top grossing and trending apps by country. Quick start: [google-play-top-charts-api](https://github.com/danielhagever/google-play-top-charts-api).
 
 ## Quick start
 
