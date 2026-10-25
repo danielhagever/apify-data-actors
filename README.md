@@ -33,8 +33,10 @@ Each Actor charges per result; the current rate for your plan is on its Store pa
 
 The job Actors have outgrown this list and live in their own repo:
 [**job-board-apis**](https://github.com/danielhagever/job-board-apis) documents the public
-job posting endpoint of 18 applicant tracking systems (Greenhouse, Lever, Ashby, Workday,
-Oracle, SmartRecruiters and more), each with a `curl` tested live. The hosted versions:
+job posting endpoint of 17 applicant tracking systems (Greenhouse, Lever, Ashby, Workday,
+Oracle, ADP and more), each with a `curl` tested live, and
+[**workday-jobs-scraper**](https://github.com/danielhagever/workday-jobs-scraper) is the
+quick start for the Workday Actor. The hosted versions:
 
 - [Workday Jobs Scraper](https://apify.com/glitchbound/workday-jobs-scraper): any Workday careers site, by company name or URL.
 - [Company Career Page Jobs Scraper](https://apify.com/glitchbound/ats-jobs-scraper): a company name or domain in, its open jobs out, across 24 systems.
