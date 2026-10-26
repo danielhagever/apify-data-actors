@@ -14,7 +14,7 @@ Each example in `examples/inputs/` is generated from the Actor's own input schem
 | [Local Business Scraper](https://apify.com/glitchbound/places-scraper) | one business with phone and website |
 | [Steam Scraper](https://apify.com/glitchbound/steam-scraper) | one game with price and metadata |
 | [App Store & Google Play Scraper](https://apify.com/glitchbound/app-store-scraper) | one app listing |
-| [App Store Top Charts Scraper](https://apify.com/glitchbound/app-charts-scraper) | one ranked chart entry |
+| [App Store Top Charts Scraper](https://apify.com/glitchbound/app-charts-scraper) | one ranked chart entry ([quick start](https://github.com/danielhagever/app-store-top-charts)) |
 | [App Developer Portfolio Scraper](https://apify.com/glitchbound/app-developer-scraper) | one app in a developer's portfolio |
 | [Website Tech Stack & Contact Scraper](https://apify.com/glitchbound/website-scraper) | one website profiled: stack, contacts, socials |
 | [Crypto Scraper](https://apify.com/glitchbound/crypto-scraper) | one coin, candle, or trending entry |
