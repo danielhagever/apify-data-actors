@@ -40,7 +40,7 @@ quick start for the Workday Actor. The hosted versions:
 
 - [Workday Jobs Scraper](https://apify.com/glitchbound/workday-jobs-scraper): any Workday careers site, by company name or URL.
 - [Company Career Page Jobs Scraper](https://apify.com/glitchbound/ats-jobs-scraper): a company name or domain in, its open jobs out, across 24 systems.
-- [Job Listings API](https://apify.com/glitchbound/ats-jobs-search): search one index of career-site jobs, refreshed daily.
+- [Job Listings API](https://apify.com/glitchbound/ats-jobs-search): search one index of career-site jobs, refreshed daily. Quick start: [job-listings-api](https://github.com/danielhagever/job-listings-api).
 - [Google Play Top Charts Scraper](https://apify.com/glitchbound/google-play-charts-scraper): top free, top grossing and trending apps by country. Quick start: [google-play-top-charts-api](https://github.com/danielhagever/google-play-top-charts-api).
 
 ## Quick start
@@ -107,6 +107,7 @@ that made it worth writing:
 - [The App Store top charts are a public API, and nobody archives them](https://dev.to/glitchbound/the-app-store-top-charts-are-a-public-api-and-nobody-archives-them-n7n). The feed shows today and nothing else, so the archive is worth more than the feed.
 - [WHOIS is gone, RDAP replaced it, and a 404 does not mean what you think](https://dev.to/glitchbound/whois-is-gone-rdap-replaced-it-and-a-404-does-not-mean-what-you-think-3alh). RDAP's 404 is ambiguous: for the TLDs missing from IANA's bootstrap, including .io and .co, it means "nowhere to ask" rather than "available". That had this Actor reporting registered domains as free to buy.
 - [Google's News API has been gone since 2016, and people still search for it](https://dev.to/glitchbound/googles-news-api-has-been-gone-since-2016-and-people-still-search-for-it-3544). The RSS endpoint that outlived it needs no key. Includes Bing's per-query XML namespace, which is the request URL itself, so no fixed namespace constant ever matches and the publisher field silently comes back null.
+- [Public job board APIs: 17 applicant tracking systems that publish every opening as JSON](https://dev.to/glitchbound/public-job-board-apis-17-applicant-tracking-systems-that-publish-every-opening-as-json-cn6).
 - [Workday Jobs Scraper: every posting from any Workday careers site, by company name](https://dev.to/glitchbound/workday-jobs-scraper-every-posting-from-any-workday-careers-site-by-company-name-8bd).
 - [Company Career Page Scraper: every open job from any company, by name or domain](https://dev.to/glitchbound/company-career-page-scraper-every-open-job-from-any-company-by-name-or-domain-ede).
 - [Google Play top charts API: top free, top grossing and trending apps in 130 countries](https://dev.to/glitchbound/google-play-top-charts-api-top-free-top-grossing-and-trending-apps-in-130-countries-31ac).
